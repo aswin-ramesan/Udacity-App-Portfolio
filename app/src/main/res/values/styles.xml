@@ -5,4 +5,30 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="CustomButtonStyle1">
+        <item name="android:layout_width">@dimen/button_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/button_top_margin</item>
+        <item name="android:background">@color/button_background_1</item>
+        <item name="android:paddingBottom">@dimen/button_bottom_padding</item>
+        <item name="android:paddingTop">@dimen/button_top_padding</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Holo.Small</item>
+        <item name="android:textColor">@color/button_text_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CustomButtonStyle2">
+        <item name="android:layout_width">@dimen/button_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/button_top_margin</item>
+        <item name="android:background">@color/button_background_2</item>
+        <item name="android:paddingBottom">@dimen/button_bottom_padding</item>
+        <item name="android:paddingTop">@dimen/button_top_padding</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Holo.Small</item>
+        <item name="android:textColor">@color/button_text_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 </resources>

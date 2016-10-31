@@ -1,121 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.aramesan.android.appportfolio.MainActivity"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:weightSum="1">
+    android:padding="10dp"
+    android:fillViewport="false">
 
-    <TextView
-        android:layout_width="290dp"
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/app_main_heading"
-        android:id="@+id/tViewHeading"
-        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
-        android:textStyle="normal"
-        android:textAlignment="center"
-        android:layout_gravity="center"
-        android:layout_weight="0.07"
-        android:gravity="center_vertical" />
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:weightSum="1"
+        tools:context="com.aramesan.android.appportfolio.MainActivity">
 
-    <Button
-        android:text="@string/app_button_1"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnApp1"
-        android:textAppearance="@android:style/TextAppearance.Holo.Small"
-        android:textStyle="bold"
-        android:layout_gravity="center"
-        android:layout_weight="0.03"
-        android:layout_marginTop="15dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:background="#3b5998"
-        android:textColor="@android:color/background_light"
-        android:onClick="displayToast" />
+        <TextView
+            android:id="@+id/tViewHeading"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.07"
+            android:gravity="center_vertical"
+            android:text="@string/app_main_heading"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textStyle="normal" />
 
-    <Button
-        android:text="@string/app_button_2"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnApp2"
-        android:textAppearance="@android:style/TextAppearance.Holo.Small"
-        android:textStyle="bold"
-        android:layout_gravity="center"
-        android:layout_weight="0.03"
-        android:layout_marginTop="13dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:background="#3b5998"
-        android:textColor="@android:color/background_light"
-        android:onClick="displayToast" />
+        <Button
+            android:id="@+id/btnApp1"
+            android:onClick="displayToast"
+            android:text="@string/app_button_1"
+            style="@style/CustomButtonStyle1" />
 
-    <Button
-        android:text="@string/app_button_3"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnApp3"
-        android:textAppearance="@android:style/TextAppearance.Holo.Small"
-        android:textStyle="bold"
-        android:layout_gravity="center"
-        android:layout_weight="0.03"
-        android:layout_marginTop="13dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:background="#3b5998"
-        android:textColor="@android:color/background_light"
-        android:onClick="displayToast" />
+        <Button
+            android:id="@+id/btnApp2"
+            android:onClick="displayToast"
+            android:text="@string/app_button_2"
+            style="@style/CustomButtonStyle1" />
 
-    <Button
-        android:text="@string/app_button_4"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnApp4"
-        android:textAppearance="@android:style/TextAppearance.Holo.Small"
-        android:textStyle="bold"
-        android:layout_gravity="center"
-        android:layout_weight="0.03"
-        android:layout_marginTop="13dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:background="#3b5998"
-        android:textColor="@android:color/background_light"
-        android:onClick="displayToast" />
+        <Button
+            android:id="@+id/btnApp3"
+            android:onClick="displayToast"
+            android:text="@string/app_button_3"
+            style="@style/CustomButtonStyle1" />
 
-    <Button
-        android:text="@string/app_button_5"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnApp5"
-        android:textAppearance="@android:style/TextAppearance.Holo.Small"
-        android:textStyle="bold"
-        android:layout_gravity="center"
-        android:layout_weight="0.03"
-        android:layout_marginTop="13dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:background="#3b5998"
-        android:textColor="@android:color/background_light"
-        android:onClick="displayToast" />
+        <Button
+            android:id="@+id/btnApp4"
+            android:onClick="displayToast"
+            android:text="@string/app_button_4"
+            style="@style/CustomButtonStyle1" />
 
-    <Button
-        android:text="@string/app_button_6"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnApp6"
-        android:textAppearance="@android:style/TextAppearance.Holo.Small"
-        android:textStyle="bold"
-        android:layout_gravity="center"
-        android:layout_weight="0.03"
-        android:layout_marginTop="13dp"
-        android:background="#5cb85c"
-        android:textColor="@android:color/background_light"
-        android:onClick="displayToast" />
+        <Button
+            android:id="@+id/btnApp5"
+            android:onClick="displayToast"
+            android:text="@string/app_button_5"
+            style="@style/CustomButtonStyle1" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btnApp6"
+            android:onClick="displayToast"
+            android:text="@string/app_button_6"
+            style="@style/CustomButtonStyle2" />
+
+    </LinearLayout>
+</ScrollView>

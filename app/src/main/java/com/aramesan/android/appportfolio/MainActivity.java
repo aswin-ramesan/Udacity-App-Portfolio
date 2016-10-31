@@ -16,6 +16,7 @@ public class MainActivity extends Activity {
 
     /**
      * To convert the first letter of each word to CAPS
+     *
      * @param value
      * @return
      */
@@ -38,10 +39,10 @@ public class MainActivity extends Activity {
 
     /**
      * To display the toast based on the button clicked
+     *
      * @param view
      */
-    public void displayToast(View view)
-    {
+    public void displayToast(View view) {
         Button clickedButton = (Button) view;
 
         String btnText = clickedButton.getText().toString();
